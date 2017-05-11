@@ -1,0 +1,85 @@
+// cover-animate
+
+#kevin {
+  z-index: 10;
+  position: absolute;
+  top: 250px;
+  color: white;
+  text-align: center;
+  width: 100%
+}
+
+// parallax
+
+.parallax{
+  background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.parallax img{
+  background-attachment: fixed;
+	width: 100%;
+	height: auto;
+}
+
+// menu
+
+.menu{
+	position: fixed;
+	top: 60px;
+	left: 90px;
+	height: 50px;
+	z-index: 99;
+}
+.menu a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	font-family: Arial;
+	text-transform: uppercase;
+	color: rgba(255,255,255,1);
+}
+.menu a:nth-child(1){
+  background-size: 100px;
+	text-align: center;
+	transition: 0.4s ease-in-out;
+}
+.menu a:nth-child(1):hover{
+	color: rgba(0,0,0,1);
+	transition: 0.4s ease-in-out;
+}
+.menu a:nth-child(2){
+	left: 110px;
+}
+.menu a:nth-child(3){
+	left: 215px;
+}
+
+// typing
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

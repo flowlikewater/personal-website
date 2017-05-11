@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated typing effect using typed js</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+	<style type="text/css">
+		.write{
+      font-size: 22px;
+      font-family: Arial;
+      color: white;
+      z-index: 10px;
+      position: absolute;
+      top: 320px;
+      left: 50%;
+		}
+		.container{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<span class="write"></span>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+        $(".write").typed({
+            strings: ["I am an ex-investment banker", "I am a ruby on rails software developer", "I fuck"],
+            typeSpeed: 0.8,
+        });
+    });
+</script>
+
+</body>
+</html>
